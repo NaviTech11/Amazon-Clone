@@ -6,7 +6,7 @@ function Home() {
     return (
         <div className="home">
             <div className="home_container">
-                <img className="home_image" src="https://images-eu.ssl-images-amazon.com/images/G/02/digital/video/merch2016/Hero/Covid19/Generic/GWBleedingHero_ENG_COVIDUPDATE__XSite_1500x600_PV_en-GB._CB428684220_.jpg" alt="Hero"/>
+                <img className="home_image" src="https://images-na.ssl-images-amazon.com/images/G/01/digital/video/merch/2020/TV/THBY_S2_02111_GWBleedingHero_1500x600_PRE_Final_en-US_PVD5224._CB410800060_.jpg" alt="Hero"/>
 
                 <div className="home_row">
                     <Product
@@ -42,7 +42,7 @@ function Home() {
                      />
                      <Product
                     id={222354}
-                     title="USB Microphone,Fifine Metal Condenser Recording Microphone for Laptop,Videos-K669B"
+                     title="USB Microphone,Fifine Metal Condenser Recording Microphone"
                      price={45.99}
                      image={"https://images-na.ssl-images-amazon.com/images/I/61u4FYXctPL._AC_SL1200_.jpg"}
                      rating={4}
@@ -63,4 +63,4 @@ function Home() {
     )
 }
 
-export default Home
+export default Home;
