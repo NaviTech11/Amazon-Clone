@@ -1,15 +1,10 @@
-import React, { forwardRef } from 'react';
+import React from 'react';
 import './Checkout.css';
 import Subtotal from './Subtotal';
 import CartItem from './CartItem';
 import { useStateValue } from "./StateProvider";
-import FlipMove from 'react-flip-move';
 
-// const FunctionalArticle = forwardRef((props, ref) => (
-//         <div ref={ref}>
-//           {props.item}
-//         </div>
-//       ));
+
 
 function Checkout() {
     const [{ cart, user }, dispatch] = useStateValue();
@@ -37,7 +32,7 @@ function Checkout() {
                     <h2 className="checkout_title">
                         Your Shopping Cart
                     </h2>
-                    <FlipMove>
+                    
                         {cart.map(item => (
                             <CartItem 
                                 key={item.id}
@@ -48,7 +43,6 @@ function Checkout() {
                                 rating={item.rating}
                             />
                         ))}
-                    </FlipMove>
                 </div>
             )}
             

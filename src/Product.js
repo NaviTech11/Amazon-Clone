@@ -18,8 +18,8 @@ function Product({id, title, image, price, rating }) {
                 price: price,
                 rating: rating,
             },
-        })
-    }
+        });
+    };
     return (
         <div className="product">
             <div className="product_info">
@@ -34,10 +34,10 @@ function Product({id, title, image, price, rating }) {
                     ))}
                 </div>
             </div>
-            <img src={image} alt="lean startup"/>
+            <img src={image} alt="book"/>
             <button onClick={addToCart}>Add to Cart</button>
         </div>
     )
 }
 
-export default Product
+export default Product;
