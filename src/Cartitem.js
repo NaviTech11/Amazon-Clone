@@ -14,7 +14,7 @@ function CartItem({id, title, image, price, rating }) {
     }
     return (
         <div className="cartItem">
-            <img className="cartItem_image" src={image} alt="item image" />
+            <img className="cartItem_image" src={image} alt="item" />
 
             <div className="cartItem_info">
                 <p className="cartItem_title">{title}</p>
@@ -31,7 +31,9 @@ function CartItem({id, title, image, price, rating }) {
                         ))}
                 </div>
 
-                <button onClick={removeFromCart}>Remove from Cart</button>
+                {/* {!hideButton && ( */}
+                    <button onClick={removeFromCart}>Remove from Cart</button>
+                {/* )} */}
             </div>    
         </div>
     )
